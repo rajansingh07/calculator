@@ -1,93 +1,52 @@
-# Calculator App
+# 📱 Calculator App
 
-A modern, feature-rich calculator application built with React Native and Expo. This app provides a seamless mathematical experience with a focus on usability, design, and performance.
+A modern, feature-rich **Calculator** app built with **React Native** and **Expo**, designed for accuracy, smooth performance, and a clean user experience on Android devices.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Expo](https://img.shields.io/badge/Expo-48-1abc9c?logo=expo&logoColor=white)](https://expo.dev/)
 
-## 📱 Features
+---
 
-### Core Functionality
-- **Standard Arithmetic**: Perform addition, subtraction, multiplication, and division with ease.
-- **Advanced Operations**: Includes support for percentages (`%`) and negation (`+/-`).
-- **Smart Formatting**: Input numbers are automatically formatted for readability.
-- **Input Validation**: Prevents invalid inputs and handles errors gracefully.
+## 🚀 Features
 
-### User Experience
-- **Calculation History**: View your past calculations in a draggable bottom sheet modal. History is persisted locally so you never lose track of your work.
-- **Theme Support**: Fully supports System Light and Dark modes with an adaptive color palette.
-- **Haptic Feedback**: Meaningful tactile feedback on button presses for a responsive feel.
-- **Gesture Controls**: Interactive UI elements including a gesture-driven history viewer.
+- **Standard Arithmetic:** Addition, subtraction, multiplication, and division  
+- **Smart Formatting:** Numbers formatted for readability  
+- **Calculation History:** Review previous calculations via bottom sheet modal  
+- **Responsive UI:** Works on multiple screen sizes, supports Dark Mode  
+- **Haptic Feedback:** Responsive tactile feedback on button presses  
 
-### Technical Highlights
-- **State Management**: Robust logic handling using React Hooks and Reducers.
-- **Persistence**: Uses `AsyncStorage` to save calculation history across sessions.
-- **Type Safety**: Built completely with TypeScript for reliability.
-- **Tests**: Comprehensive unit tests for calculator logic and formatting utilities.
+---
 
-## 🚀 Getting Started
+## 🛠 Technical Details
+
+- Built with **Expo** and **TypeScript**  
+- **Component-based architecture** for maintainability  
+- **Custom hooks** for calculator logic and state management  
+- **AsyncStorage** used for persisting calculation history  
+- **Unit tests** for core calculation and formatting logic  
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/40d3b9b8-12c1-4920-ae2c-51d32fcc5a9b" width="180" height="360" style="margin-right:10px"/>
+  <img src="https://github.com/user-attachments/assets/d0a0942b-adad-4421-ba5a-87b00ea3214a" width="180" height="360" style="margin-right:10px"/>
+  <img src="https://github.com/user-attachments/assets/b323b3e0-7b8c-46b4-bbf1-88ce4707617a" width="180" height="360"/>
+</p>
+
+---
+
+## 📦 Installation & Getting Started
 
 ### Prerequisites
-- Node.js installed
-- npm or yarn
-- Expo Go app on your physical device (Android/iOS) OR an Emulator
+- Node.js installed  
+- npm or yarn  
+- Expo Go app on a physical device (Android/iOS) or an emulator  
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd Calculator
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start the application**
-   ```bash
-   npx expo start
-   ```
-
-4. **Run on Device/Emulator**
-   - Scan the QR code with the **Expo Go** app (Android) or Camera (iOS).
-   - Press `a` to run on Android Emulator.
-   - Press `i` to run on iOS Simulator.
-   - Press `w` to run on Web.
-
-## 🧪 Testing
-
-The project includes a suite of tests to ensure calculation accuracy.
-
+### Setup
 ```bash
-npm test
-```
-
-## 🛠 Tech Stack
-
-- **Framework**: [Expo](https://expo.dev) & [React Native](https://reactnative.dev)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction)
-- **Storage**: @react-native-async-storage/async-storage
-- **Icons**: @expo/vector-icons
-- **Testing**: Jest & React Native Testing Library
-
-## 📂 Project Structure
-
-```
-Calculator/
-├── app/                  # Expo Router pages
-├── src/
-│   ├── components/       # Reusable UI components (Button, Display, History)
-│   ├── constants/        # App constants (Colors, Layout, Buttons)
-│   ├── hooks/            # Custom hooks (useCalculator, etc.)
-│   ├── types/            # TypeScript definitions
-│   └── utils/            # Helper functions (Math logic, Formatting)
-├── __tests__/            # Unit tests
-└── ...config files
-```
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+git clone https://github.com/rajansingh07/calculator.git
+cd calculator
+npm install
+npx expo start
