@@ -1,50 +1,93 @@
-# Welcome to your Expo app 👋
+# Calculator App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, feature-rich calculator application built with React Native and Expo. This app provides a seamless mathematical experience with a focus on usability, design, and performance.
 
-## Get started
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-1. Install dependencies
+## 📱 Features
 
+### Core Functionality
+- **Standard Arithmetic**: Perform addition, subtraction, multiplication, and division with ease.
+- **Advanced Operations**: Includes support for percentages (`%`) and negation (`+/-`).
+- **Smart Formatting**: Input numbers are automatically formatted for readability.
+- **Input Validation**: Prevents invalid inputs and handles errors gracefully.
+
+### User Experience
+- **Calculation History**: View your past calculations in a draggable bottom sheet modal. History is persisted locally so you never lose track of your work.
+- **Theme Support**: Fully supports System Light and Dark modes with an adaptive color palette.
+- **Haptic Feedback**: Meaningful tactile feedback on button presses for a responsive feel.
+- **Gesture Controls**: Interactive UI elements including a gesture-driven history viewer.
+
+### Technical Highlights
+- **State Management**: Robust logic handling using React Hooks and Reducers.
+- **Persistence**: Uses `AsyncStorage` to save calculation history across sessions.
+- **Type Safety**: Built completely with TypeScript for reliability.
+- **Tests**: Comprehensive unit tests for calculator logic and formatting utilities.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js installed
+- npm or yarn
+- Expo Go app on your physical device (Android/iOS) OR an Emulator
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd Calculator
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Start the application**
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on Device/Emulator**
+   - Scan the QR code with the **Expo Go** app (Android) or Camera (iOS).
+   - Press `a` to run on Android Emulator.
+   - Press `i` to run on iOS Simulator.
+   - Press `w` to run on Web.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🧪 Testing
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+The project includes a suite of tests to ensure calculation accuracy.
 
 ```bash
-npm run reset-project
+npm test
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🛠 Tech Stack
 
-## Learn more
+- **Framework**: [Expo](https://expo.dev) & [React Native](https://reactnative.dev)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction)
+- **Storage**: @react-native-async-storage/async-storage
+- **Icons**: @expo/vector-icons
+- **Testing**: Jest & React Native Testing Library
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📂 Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+Calculator/
+├── app/                  # Expo Router pages
+├── src/
+│   ├── components/       # Reusable UI components (Button, Display, History)
+│   ├── constants/        # App constants (Colors, Layout, Buttons)
+│   ├── hooks/            # Custom hooks (useCalculator, etc.)
+│   ├── types/            # TypeScript definitions
+│   └── utils/            # Helper functions (Math logic, Formatting)
+├── __tests__/            # Unit tests
+└── ...config files
+```
 
-## Join the community
+## 🤝 Contributing
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Contributions are welcome! Please feel free to submit a Pull Request.
